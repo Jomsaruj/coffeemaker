@@ -9,7 +9,7 @@ This exercise focuses entirely on testing.  You are NOT to fix the coffee maker.
 * [Test Cases Listing](../../wiki/Test%20Cases%20Listing)
 * [Requirement Traceability Matrix](../../wiki/Requirement%20Traceability%20Matrix)
 * [Bug Report](../../wiki/Bug%20Report)
-* [Instruction how to run unit test](../../wiki/Instruction%20how%20to%20run%20test)
+* [Instruction how to run unit test](../../wiki/Instruction%20how%20to%20run%20tests)
 
 
 ## Directory Structure
