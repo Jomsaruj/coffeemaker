@@ -1,16 +1,16 @@
 CoffeeMaker Assignment
 =================================
-### Assignment Report
+
+My task is to create a file, `CoffeeMakerTest.java`, which properly tests the `CoffeeMaker` class to ensure it is working properly. 
+
+This exercise focuses entirely on testing.  You are NOT to fix the coffee maker.  You are only to develop tests to exercise the functionality as described in the requirements.
+
+## Assignment Report
 * [Test Cases Listing](../../wiki/Test%20Cases%20Listing)
 * [Requirement Traceability Matrix](../../wiki/Requirement%20Traceability%20Matrix)
 * [Bug Report](../../wiki/Bug%20Report)
+* [Instruction how to run unit test](../../wiki/Instruction%20how%20to%20run%20test)
 
-### Assignment Instruction
-My task is to create a file, `CoffeeMakerTest.java`, which properly tests the `CoffeeMaker` class to ensure it is working properly. 
-
-Inside the project, you will find the functional code, a couple of unit tests to get you started. The goal is to construct a sufficient number of unit tests to find most of bugs in the "buggy" version of the coffee maker that is included. You should be able to detect at least 5 bugs in the code using your unit tests.
-
-This exercise focuses entirely on testing.  You are NOT to fix the coffee maker.  You are only to develop tests to exercise the functionality as described in the requirements.
 
 ### Directory Structure
  * `build.gradle` -- the build file that will help you build the SUT and tests as well as execute the tests and measure coverage
