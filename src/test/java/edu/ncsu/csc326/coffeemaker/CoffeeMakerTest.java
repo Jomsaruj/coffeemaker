@@ -654,7 +654,7 @@ public class CoffeeMakerTest {
 		coffeeMaker.addRecipe(recipe2);
 		coffeeMaker.addRecipe(recipe3);
 		coffeeMaker.addRecipe(recipe4);
-		assertNotEquals(recipe4.getName(), coffeeMaker.getRecipes()[3].getName());
+		assertEquals(3, coffeeMaker.getRecipes().length);
 	}
 
 	/**
