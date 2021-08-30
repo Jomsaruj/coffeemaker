@@ -1,5 +1,9 @@
 CoffeeMaker Assignment
 =================================
+### Assignment Report
+* [Test Cases Listing](../../wiki/Test%20Cases%20Listing)
+* [Requirement Traceability Matrix](../../wiki/Requirement%20Traceability%20Matrix)
+* [Bug Report](../../wiki/Bug%20Report)
 
 ### Assignment Instruction
 My task is to create a file, `CoffeeMakerTest.java`, which properly tests the `CoffeeMaker` class to ensure it is working properly. 
@@ -8,14 +12,10 @@ Inside the project, you will find the functional code, a couple of unit tests to
 
 This exercise focuses entirely on testing.  You are NOT to fix the coffee maker.  You are only to develop tests to exercise the functionality as described in the requirements.
 
-Directory Structure
--------------------
+### Directory Structure
  * `build.gradle` -- the build file that will help you build the SUT and tests as well as execute the tests and measure coverage
  * `gradlew` -- script to run gradle from a *NIX system
  * `gradlew.bat` -- script to run gradle from Windows
- * `Requirements-CoffeeMaker.pdf` -- the requirements 
- * `ClassDiagram-CoffeeMaker.pdf` -- the class diagram of the coffee maker software
- * `SequenceDiagram-CoffeeMaker.pdf` -- the sequence diagram (describes the interactions among the objects) of the coffee maker software
  * `src/main/java` -- contains the system under test (SUT; in this case, the coffee maker code) and all of its dependencies.  Do not modify any of this code.
    - `edu.ncsu.csc326.coffeemaker.*` -- the code for the system under test (the coffee maker)
  * `src/test/java` -- the test code
