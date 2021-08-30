@@ -12,7 +12,7 @@ This exercise focuses entirely on testing.  You are NOT to fix the coffee maker.
 * [Instruction how to run unit test](../../wiki/Instruction%20how%20to%20run%20test)
 
 
-### Directory Structure
+## Directory Structure
  * `build.gradle` -- the build file that will help you build the SUT and tests as well as execute the tests and measure coverage
  * `gradlew` -- script to run gradle from a *NIX system
  * `gradlew.bat` -- script to run gradle from Windows
