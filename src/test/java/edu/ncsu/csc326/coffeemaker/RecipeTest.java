@@ -64,6 +64,7 @@ public class RecipeTest {
     public ExpectedException expectedException = ExpectedException.none();
 
     /**
+     * Test Case ID: 42
      * Given a coffee maker with new recipes
      * When we create a new recipe with valid information
      * Then the recipe will be created and not throw RecipeException
@@ -88,6 +89,7 @@ public class RecipeTest {
     }
 
     /**
+     * Test Case ID: 43
      * Given a coffee maker with new recipes
      * When we create a new recipe with invalid datatype for price
      * Then the recipe will not be created and throw RecipeException
@@ -103,6 +105,7 @@ public class RecipeTest {
     }
 
     /**
+     * Test Case ID: 44
      * Given a coffee maker with new recipes
      * When we create a new recipe with negative price
      * Then the recipe will not be created and throw RecipeException
@@ -118,6 +121,7 @@ public class RecipeTest {
     }
 
     /**
+     * Test Case ID: 45
      * Given a coffee maker with new recipes
      * When we create a new recipe with 0 price
      * Then the recipe will be saved and not throw RecipeException
@@ -131,6 +135,7 @@ public class RecipeTest {
     }
 
     /**
+     * Test Case ID: 46
      * Given a coffee maker with new recipes
      * When we create a new recipe with invalid datatype for coffee
      * Then the recipe will not be created and throw RecipeException
@@ -146,6 +151,7 @@ public class RecipeTest {
     }
 
     /**
+     * Test Case ID: 47
      * Given a coffee maker with new recipes
      * When we create a new recipe with negative coffee
      * Then the recipe will not be created and throw RecipeException
@@ -161,6 +167,7 @@ public class RecipeTest {
     }
 
     /**
+     * Test Case ID: 48
      * Given a coffee maker with new recipes
      * When we create a new recipe with invalid datatype for milk
      * Then the recipe will not be created and throw RecipeException
@@ -176,6 +183,7 @@ public class RecipeTest {
     }
 
     /**
+     * Test Case ID: 49
      * Given a coffee maker with new recipes
      * When we create a new recipe with negative milk
      * Then the recipe will not be created and throw RecipeException
@@ -191,6 +199,7 @@ public class RecipeTest {
     }
 
     /**
+     * Test Case ID: 50
      * Given a coffee maker with new recipes
      * When we create a new recipe with invalid datatype for sugar
      * Then the recipe will not be created and throw RecipeException
@@ -206,6 +215,7 @@ public class RecipeTest {
     }
 
     /**
+     * Test Case ID: 51
      * Given a coffee maker with new recipes
      * When we create a new recipe with negative sugar
      * Then the recipe will not be created and throw RecipeException
@@ -221,6 +231,7 @@ public class RecipeTest {
     }
 
     /**
+     * Test Case ID: 52
      * Given a coffee maker with new recipes
      * When we create a new recipe with invalid datatype for chocolate
      * Then the recipe will not be created and throw RecipeException
@@ -236,6 +247,7 @@ public class RecipeTest {
     }
 
     /**
+     * Test Case ID: 53
      * Given a coffee maker with new recipes
      * When we create a new recipe with negative chocolate
      * Then the recipe will not be created and throw RecipeException
@@ -251,6 +263,7 @@ public class RecipeTest {
     }
 
     /**
+     * Test Case ID: 54
      * Given 2 duplicate name recipe
      * When we state that 2 duplicate name recipe are equal
      * Then the method should return true
@@ -262,6 +275,7 @@ public class RecipeTest {
     }
 
     /**
+     * Test Case ID: 55
      * Given 2 not duplicate name recipe
      * When we state that 2 not duplicate name recipe are equal
      * Then the method should return false

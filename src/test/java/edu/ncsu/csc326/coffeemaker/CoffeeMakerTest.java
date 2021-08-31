@@ -121,6 +121,7 @@ public class CoffeeMakerTest {
 	public ExpectedException expectedException = ExpectedException.none();
 
 	/**
+	 * Test Case ID: 1
 	 * Given a coffee maker with new recipes
 	 * When we add 1 valid recipe
 	 * Then the recipe will be valid to added to the system
@@ -131,6 +132,7 @@ public class CoffeeMakerTest {
 	}
 
 	/**
+	 * Test Case ID: 2
 	 * Given a coffee maker with new recipes
 	 * When we add 3 recipes
 	 * Then all recipe will be added to the system
@@ -143,6 +145,7 @@ public class CoffeeMakerTest {
 	}
 
 	/**
+	 * Test Case ID: 3
 	 * Given a coffee maker with new recipes
 	 * When we add 4 recipes
 	 * Then the fourth recipe will not be added to the system
@@ -156,6 +159,7 @@ public class CoffeeMakerTest {
 	}
 
 	/**
+	 * Test Case ID: 4
 	 * Given a coffee maker with new recipes
 	 * When we add a new recipe with the name that already exists in the system
 	 * Then the recipe will not be added to the system
@@ -169,6 +173,7 @@ public class CoffeeMakerTest {
 	}
 
 	/**
+	 * Test Case ID: 5
 	 * Given a coffee maker with recipe number to delete
 	 * When we pick a valid recipe number
 	 * Then the program should return name of deleted recipe
@@ -182,6 +187,7 @@ public class CoffeeMakerTest {
 	}
 
 	/**
+	 * Test Case ID: 6
 	 * Given a coffee maker with recipe number to delete
 	 * When we pick an empty slot number
 	 * Then the program should return null
@@ -192,6 +198,7 @@ public class CoffeeMakerTest {
 	}
 
 	/**
+	 * Test Case ID: 7
 	 * Given a coffee maker with only 1 recipe
 	 * When we delete the recipe that slot should be empty
 	 * Then if we delete that slot again the program should return null
@@ -204,6 +211,7 @@ public class CoffeeMakerTest {
 	}
 
 	/**
+	 * Test Case ID: 8
 	 * Given a coffee maker with recipe number to edit
 	 * When we pick a valid recipe number
 	 * Then the program should return recipe name
@@ -224,6 +232,7 @@ public class CoffeeMakerTest {
 	}
 
 	/**
+	 * Test Case ID: 9
 	 * Given a coffee maker with recipe number to edit
 	 * When we pick an empty recipe number
 	 * Then the program should return null
@@ -243,6 +252,7 @@ public class CoffeeMakerTest {
 	}
 
 	/**
+	 * Test Case ID: 10
 	 * Given a coffee maker with recipe number to edit
 	 * When we pick a valid recipe number and change recipe name
 	 * Then the program should not change it
@@ -264,6 +274,7 @@ public class CoffeeMakerTest {
 	}
 
 	/**
+	 * Test Case ID: 11
 	 * Given a coffee maker with 1 recipe
 	 * When we delete the recipe
 	 * Then we will not be able to edit it
@@ -283,6 +294,7 @@ public class CoffeeMakerTest {
 	}
 
 	/**
+	 * Test Case ID: 12
 	 * Given a coffee maker with the default inventory
 	 * When we add coffee with well-formed quantities
 	 * Then we do not get an exception trying to read the inventory quantities.
@@ -296,6 +308,7 @@ public class CoffeeMakerTest {
 	}
 
 	/**
+	 * Test Case ID: 13
 	 * Given a coffee maker with the default inventory
 	 * When we add milk with well-formed quantities
 	 * Then we do not get an exception trying to read the inventory quantities.
@@ -309,6 +322,7 @@ public class CoffeeMakerTest {
 	}
 
 	/**
+	 * Test Case ID: 14
 	 * Given a coffee maker with the default inventory
 	 * When we add sugar with well-formed quantities
 	 * Then we do not get an exception trying to read the inventory quantities.
@@ -322,6 +336,7 @@ public class CoffeeMakerTest {
 	}
 
 	/**
+	 * Test Case ID: 15
 	 * Given a coffee maker with the default inventory
 	 * When we add chocolate with well-formed quantities
 	 * Then we do not get an exception trying to read the inventory quantities.
@@ -335,6 +350,7 @@ public class CoffeeMakerTest {
 	}
 
 	/**
+	 * Test Case ID: 16
 	 * Given a coffee maker with the default inventory (all 15)
 	 * When we add coffee by 5
 	 * Then 5 will add to 15 make it 20
@@ -350,6 +366,7 @@ public class CoffeeMakerTest {
 	}
 
 	/**
+	 * Test Case ID: 17
 	 * Given a coffee maker with the default inventory
 	 * When we add coffee with decimal-formed quantities
 	 * Then we do get an InventoryException
@@ -365,6 +382,7 @@ public class CoffeeMakerTest {
 	}
 
 	/**
+	 * Test Case ID: 18
 	 * Given a coffee maker with the default inventory
 	 * When we add milk with decimal-formed quantities
 	 * Then we do get an InventoryException
@@ -380,6 +398,7 @@ public class CoffeeMakerTest {
 	}
 
 	/**
+	 * Test Case ID: 19
 	 * Given a coffee maker with the default inventory
 	 * When we add sugar with decimal-formed quantities
 	 * Then we do get an InventoryException
@@ -395,6 +414,7 @@ public class CoffeeMakerTest {
 	}
 
 	/**
+	 * Test Case ID: 20
 	 * Given a coffee maker with the default inventory
 	 * When we add chocolate with decimal-formed quantities
 	 * Then we do get an InventoryException
@@ -410,6 +430,7 @@ public class CoffeeMakerTest {
 	}
 
 	/**
+	 * Test Case ID: 21
 	 * Given a coffee maker with the default inventory
 	 * When we add coffee with negative-formed quantities
 	 * Then we do get an InventoryException
@@ -425,6 +446,7 @@ public class CoffeeMakerTest {
 	}
 
 	/**
+	 * Test Case ID: 22
 	 * Given a coffee maker with the default inventory
 	 * When we add milk with negative-formed quantities
 	 * Then we do get an InventoryException
@@ -440,6 +462,7 @@ public class CoffeeMakerTest {
 	}
 
 	/**
+	 * Test Case ID: 23
 	 * Given a coffee maker with the default inventory
 	 * When we add sugar with negative-formed quantities
 	 * Then we do get an InventoryException
@@ -455,6 +478,7 @@ public class CoffeeMakerTest {
 	}
 
 	/**
+	 * Test Case ID: 24
 	 * Given a coffee maker with the default inventory
 	 * When we add chocolate with negative-formed quantities
 	 * Then we do get an InventoryException
@@ -470,6 +494,7 @@ public class CoffeeMakerTest {
 	}
 
 	/**
+	 * Test Case ID: 25
 	 * Given a coffee maker with the default inventory
 	 * When we add coffee with alphabetic character-formed quantities
 	 * Then we do get an InventoryException
@@ -485,6 +510,7 @@ public class CoffeeMakerTest {
 	}
 
 	/**
+	 * Test Case ID: 26
 	 * Given a coffee maker with the default inventory
 	 * When we add milk with alphabetic character-formed quantities
 	 * Then we do get an InventoryException
@@ -500,6 +526,7 @@ public class CoffeeMakerTest {
 	}
 
 	/**
+	 * Test Case ID: 27
 	 * Given a coffee maker with the default inventory
 	 * When we add sugar with alphabetic character-formed quantities
 	 * Then we do get an InventoryException
@@ -515,6 +542,7 @@ public class CoffeeMakerTest {
 	}
 
 	/**
+	 * Test Case ID: 28
 	 * Given a coffee maker with the default inventory
 	 * When we add chocolate with alphabetic character-formed quantities
 	 * Then we do get an InventoryException
@@ -530,6 +558,7 @@ public class CoffeeMakerTest {
 	}
 
 	/**
+	 * Test Case ID: 29
 	 * Given a coffee maker with the default inventory
 	 * When we select check inventory
 	 * Then we get list of all inventories with it quantity
@@ -542,6 +571,7 @@ public class CoffeeMakerTest {
 	}
 
 	/**
+	 * Test Case ID: 30
 	 * Given a coffee maker with the default inventory
 	 * When we add inventory by 5 and select check inventory
 	 * Then we get list of all inventories with it default quantity + 5
@@ -555,6 +585,7 @@ public class CoffeeMakerTest {
 	}
 
 	/**
+	 * Test Case ID: 31
 	 * Given a coffee maker with the default inventory
 	 * When we purchase beverage and select check inventory
 	 * Then we get list of all inventories with it quantity - used inventory
@@ -569,6 +600,7 @@ public class CoffeeMakerTest {
 	}
 
 	/**
+	 * Test Case ID: 32
 	 * Given a coffee with 50 units price
 	 * When we purchase beverage with 60 units
 	 * Then we get return change at 10 units
@@ -581,6 +613,7 @@ public class CoffeeMakerTest {
 	}
 
 	/**
+	 * Test Case ID: 33
 	 * Given a coffee maker with the default inventory
 	 * When we purchase beverage and enter not enough money
 	 * Then we get list of all inventories that remain the same
@@ -595,6 +628,7 @@ public class CoffeeMakerTest {
 	}
 
 	/**
+	 * Test Case ID: 34
 	 * Given a coffee with 50 units price
 	 * When we purchase beverage with 40 units
 	 * Then we get return change 40 units
@@ -607,6 +641,7 @@ public class CoffeeMakerTest {
 	}
 
 	/**
+	 * Test Case ID: 35
 	 * Given a coffee maker with the default inventory
 	 * When we purchase beverage and coffee maker not have enough inventory
 	 * Then we get list of all inventories that remain the same
@@ -621,6 +656,7 @@ public class CoffeeMakerTest {
 	}
 
 	/**
+	 * Test Case ID: 36
 	 * Given a coffee maker with the default inventory
 	 * When we purchase beverage and coffee maker not have enough inventory
 	 * Then we get return change back
@@ -633,6 +669,7 @@ public class CoffeeMakerTest {
 	}
 
 	/**
+	 * Test Case ID: 37
 	 * Given a coffee maker with new recipes
 	 * When we add 1 valid recipe
 	 * Then the recipe will be saved in recipe book
@@ -644,6 +681,7 @@ public class CoffeeMakerTest {
 	}
 
 	/**
+	 * Test Case ID: 38
 	 * Given a coffee maker with new recipes
 	 * When we add 4 valid recipe
 	 * Then the fourth recipe will not be saved in recipe book
@@ -658,6 +696,7 @@ public class CoffeeMakerTest {
 	}
 
 	/**
+	 * Test Case ID: 39
 	 * Given a coffee maker with new recipes
 	 * When we add recipe which have duplicate name
 	 * Then the new recipe will not be added to recipe book
@@ -670,6 +709,7 @@ public class CoffeeMakerTest {
 	}
 
 	/**
+	 * Test Case ID: 40
 	 * Given a coffee maker 1 recipe
 	 * When we delete the recipe and call method getRecipe
 	 * Then the program should return null
@@ -682,6 +722,7 @@ public class CoffeeMakerTest {
 	}
 
 	/**
+	 * Test Case ID: 41
 	 * Given a coffee maker with recipe number to edit
 	 * When we pick a valid recipe number
 	 * Then the program should return recipe name
