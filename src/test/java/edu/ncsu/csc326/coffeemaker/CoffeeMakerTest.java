@@ -745,4 +745,16 @@ public class CoffeeMakerTest {
 		assertEquals(10, coffeeMaker.getRecipes()[0].getAmtSugar());
 		assertEquals(500, coffeeMaker.getRecipes()[0].getPrice());
 	}
+
+	/**
+	 * Test Case ID: 56
+	 * Given a coffee maker without any recipe in the system
+	 * When purchase unexist recipe
+	 * Then purchase must fail and return full amount of money
+	 */
+	@Test
+	public void testPurchaseEmptyRecipe() {
+		assertEquals(300, coffeeMaker.makeCoffee(0,300));
+	}
+
 }
