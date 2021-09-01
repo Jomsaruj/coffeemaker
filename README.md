@@ -1,4 +1,4 @@
-CoffeeMaker Assignment 2 - Code Coverage with JaCoCo
+CoffeeMaker Assignment 2 - code coverage with JaCoCo
 =================================
 
 Due date: 7 September 2021
@@ -13,7 +13,7 @@ This exercise focuses entirely on testing.  You are NOT to fix the coffee maker.
 * [JaCoCo test report version 2 (after add test cases)](../../wiki/After%20add%20test%20cases)
 * [Instruction how to generate JaCoCo report](../../wiki/How%20to%20generate%20JaCoCo%20report)
 
-CoffeeMaker Assignment 1 - Write Unit Tests
+CoffeeMaker Assignment 1 - write unit tests
 =================================
 
 Due date: 31 August 2021
