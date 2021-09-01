@@ -9,9 +9,9 @@ This exercise focuses entirely on testing.  You are NOT to fix the coffee maker.
 
 ## Assignment Report
 
-* [JaCoCo test report version 1 (before add test cases)](../../wiki/Test%20Case)
-* [JaCoCo test report version 2 (after add test cases)](../../wiki/Test%20Case)
-* [Instruction how to generate JaCoCo report](../../wiki/Test%20Case)
+* [JaCoCo test report version 1 (before add test cases)](../../wiki/Before%20add%20test%20cases)
+* [JaCoCo test report version 2 (after add test cases)](../../wiki/After%20add%20test%20cases)
+* [Instruction how to generate JaCoCo report](../../wiki/How%20to%20generate%20JaCoCo%20report)
 
 CoffeeMaker Assignment 1 - Write Unit Tests
 =================================
