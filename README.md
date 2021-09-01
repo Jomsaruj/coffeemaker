@@ -1,5 +1,22 @@
-CoffeeMaker Assignment
+CoffeeMaker Assignment 2 - Code Coverage with JaCoCo
 =================================
+
+Due date: 7 September 2021
+
+My task is to add code coverage using JaCoCo to my coffeemaker project by add it as a Gradle plugin (which automatically creates a task to generate a report).
+
+This exercise focuses entirely on testing.  You are NOT to fix the coffee maker.  You are only to develop tests to exercise the functionality as described in the requirements.
+
+## Assignment Report
+
+* [JaCoCo test report version 1 (before add test cases)](../../wiki/Test%20Case)
+* [JaCoCo test report version 2 (after add test cases)](../../wiki/Test%20Case)
+* [Instruction how to generate JaCoCo report](../../wiki/Test%20Case)
+
+CoffeeMaker Assignment 1 - Write Unit Tests
+=================================
+
+Due date: 31 August 2021
 
 My task is to create a file, `CoffeeMakerTest.java`, which properly tests the `CoffeeMaker` class to ensure it is working properly. 
 
