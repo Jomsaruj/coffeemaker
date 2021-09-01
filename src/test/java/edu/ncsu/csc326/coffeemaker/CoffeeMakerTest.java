@@ -51,6 +51,28 @@ public class CoffeeMakerTest {
 	private Recipe recipe5;
 
 	/**
+	 * Method to create Recipe instance
+	 * @param name name of recipe
+	 * @param chocolate amount of chocolate for recipe
+	 * @param coffee amount of coffee for recipe
+	 * @param milk amount of milk for the recipe
+	 * @param sugar amount of sugar for the recipe
+	 * @param price price of recipe
+	 * @return Recipe instance
+	 * @throws RecipeException
+	 */
+	private Recipe createRecipe(String name, String chocolate, String coffee, String milk, String sugar, String price) throws RecipeException{
+		Recipe r = new Recipe();
+		r.setName(name);
+		r.setAmtChocolate(chocolate);
+		r.setAmtCoffee(coffee);
+		r.setAmtMilk(milk);
+		r.setAmtSugar(sugar);
+		r.setPrice(price);
+		return r;
+	}
+
+	/**
 	 * Initializes some recipes to test with and the {@link CoffeeMaker} 
 	 * object we wish to test.
 	 * 
@@ -62,61 +84,25 @@ public class CoffeeMakerTest {
 		coffeeMaker = new CoffeeMaker();
 		inventory = new Inventory();
 		
-		//Set up for r1
-		recipe1 = new Recipe();
-		recipe1.setName("Coffee");
-		recipe1.setAmtChocolate("0");
-		recipe1.setAmtCoffee("3");
-		recipe1.setAmtMilk("1");
-		recipe1.setAmtSugar("1");
-		recipe1.setPrice("50");
+		//Set up for recipe1
+		recipe1 = createRecipe("Coffee", "0","3","1","1","50");
 
-		//Set up for r1Copy
-		//r1Copy is a recipe that have same recipe's name as r1
+		//Set up for recipe1Copy
+		//recipe1Copy is a recipe that have same recipe's name as r1
 		//but other properties are different
-		recipe1Copy = new Recipe();
-		recipe1Copy.setName("Coffee");
-		recipe1Copy.setAmtChocolate("1");
-		recipe1Copy.setAmtCoffee("1");
-		recipe1Copy.setAmtMilk("2");
-		recipe1Copy.setAmtSugar("2");
-		recipe1Copy.setPrice("10");
+		recipe1Copy = createRecipe("Coffee", "1","1","2","2","10");
 		
-		//Set up for r2
-		recipe2 = new Recipe();
-		recipe2.setName("Mocha");
-		recipe2.setAmtChocolate("20");
-		recipe2.setAmtCoffee("3");
-		recipe2.setAmtMilk("1");
-		recipe2.setAmtSugar("1");
-		recipe2.setPrice("75");
+		//Set up for recipe2
+		recipe2 = createRecipe("Mocha", "20","3","1","1","75");
 		
-		//Set up for r3
-		recipe3 = new Recipe();
-		recipe3.setName("Latte");
-		recipe3.setAmtChocolate("0");
-		recipe3.setAmtCoffee("3");
-		recipe3.setAmtMilk("3");
-		recipe3.setAmtSugar("1");
-		recipe3.setPrice("100");
+		//Set up for recipe3
+		recipe3 = createRecipe("Latte", "0","3","3","1","100");
 		
-		//Set up for r4
-		recipe4 = new Recipe();
-		recipe4.setName("Hot Chocolate");
-		recipe4.setAmtChocolate("4");
-		recipe4.setAmtCoffee("0");
-		recipe4.setAmtMilk("1");
-		recipe4.setAmtSugar("1");
-		recipe4.setPrice("65");
+		//Set up for recipe4
+		recipe4 = createRecipe("Hot Chocolate", "4","0","1","1","65");
 
-		//Set up for r5
-		recipe5 = new Recipe();
-		recipe5.setName("Extra");
-		recipe5.setAmtChocolate("16");
-		recipe5.setAmtCoffee("16");
-		recipe5.setAmtMilk("16");
-		recipe5.setAmtSugar("16");
-		recipe5.setPrice("200");
+		//Set up for recipe5
+		recipe5 = createRecipe("Extra", "16","16","16","16","200");
 	}
 
 	@Rule

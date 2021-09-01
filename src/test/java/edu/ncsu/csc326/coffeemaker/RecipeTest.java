@@ -28,6 +28,28 @@ public class RecipeTest {
     private CoffeeMaker coffeemaker;
 
     /**
+     * Method to create Recipe instance
+     * @param name name of recipe
+     * @param chocolate amount of chocolate for recipe
+     * @param coffee amount of coffee for recipe
+     * @param milk amount of milk for the recipe
+     * @param sugar amount of sugar for the recipe
+     * @param price price of recipe
+     * @return Recipe instance
+     * @throws RecipeException
+     */
+    private Recipe createRecipe(String name, String chocolate, String coffee, String milk, String sugar, String price) throws RecipeException{
+        Recipe r = new Recipe();
+        r.setName(name);
+        r.setAmtChocolate(chocolate);
+        r.setAmtCoffee(coffee);
+        r.setAmtMilk(milk);
+        r.setAmtSugar(sugar);
+        r.setPrice(price);
+        return r;
+    }
+
+    /**
      * Initializes some recipes to test with and the {@link Recipe}
      * object we wish to test.
      *
@@ -38,37 +60,9 @@ public class RecipeTest {
         recipe = new Recipe();
         coffeemaker= new CoffeeMaker();
 
-        recipeDuplicate1 = new Recipe();
-        recipeDuplicate1.setName("Coffee");
-        recipeDuplicate1.setAmtChocolate("0");
-        recipeDuplicate1.setAmtCoffee("3");
-        recipeDuplicate1.setAmtMilk("1");
-        recipeDuplicate1.setAmtSugar("1");
-        recipeDuplicate1.setPrice("50");
-
-        recipeNotDuplicate1 = new Recipe();
-        recipeNotDuplicate1.setName("Special Coffee");
-        recipeNotDuplicate1.setAmtChocolate("0");
-        recipeNotDuplicate1.setAmtCoffee("3");
-        recipeNotDuplicate1.setAmtMilk("1");
-        recipeNotDuplicate1.setAmtSugar("1");
-        recipeNotDuplicate1.setPrice("50");
-
-        recipeDuplicate2 = new Recipe();
-        recipeDuplicate2.setName("Coffee");
-        recipeDuplicate2.setAmtChocolate("0");
-        recipeDuplicate2.setAmtCoffee("3");
-        recipeDuplicate2.setAmtMilk("1");
-        recipeDuplicate2.setAmtSugar("1");
-        recipeDuplicate2.setPrice("50");
-
-        recipeNullName = new Recipe();
-        recipeNullName.setName(null);
-        recipeNullName.setAmtChocolate("0");
-        recipeNullName.setAmtCoffee("3");
-        recipeNullName.setAmtMilk("1");
-        recipeNullName.setAmtSugar("1");
-        recipeNullName.setPrice("50");
+        recipeDuplicate1 = createRecipe("Coffee", "0","3","1","1","50");
+        recipeNotDuplicate1 = createRecipe("Special Coffee", "0","3","1","1","50");
+        recipeDuplicate2 = createRecipe("Coffee", "0","3","1","1","50");
     }
 
     @Rule
