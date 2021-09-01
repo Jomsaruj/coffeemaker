@@ -21,9 +21,11 @@ public class RecipeTest {
      * The object under test.
      */
     private Recipe recipe;
+    private Recipe recipeNullName;
     private Recipe recipeDuplicate1;
     private Recipe recipeNotDuplicate1;
     private Recipe recipeDuplicate2;
+    private CoffeeMaker coffeemaker;
 
     /**
      * Initializes some recipes to test with and the {@link Recipe}
@@ -34,6 +36,7 @@ public class RecipeTest {
     public void setUp() throws RecipeException{
 
         recipe = new Recipe();
+        coffeemaker= new CoffeeMaker();
 
         recipeDuplicate1 = new Recipe();
         recipeDuplicate1.setName("Coffee");
@@ -58,6 +61,14 @@ public class RecipeTest {
         recipeDuplicate2.setAmtMilk("1");
         recipeDuplicate2.setAmtSugar("1");
         recipeDuplicate2.setPrice("50");
+
+        recipeNullName = new Recipe();
+        recipeNullName.setName(null);
+        recipeNullName.setAmtChocolate("0");
+        recipeNullName.setAmtCoffee("3");
+        recipeNullName.setAmtMilk("1");
+        recipeNullName.setAmtSugar("1");
+        recipeNullName.setPrice("50");
     }
 
     @Rule
@@ -284,5 +295,42 @@ public class RecipeTest {
     @Test
     public void testNotEquals() {
         assertFalse(recipeDuplicate1.equals(recipeNotDuplicate1));
+    }
+
+    /**
+     * Test Case ID: 58
+     * Given 2 not duplicate recipe
+     * When we state that 2 not duplicate recipe are equal
+     * Then the method should return true
+     *
+     */
+    @Test
+    public void testCompareDuplicateObject() {
+        assertTrue(recipeDuplicate1.equals(recipeDuplicate1));
+    }
+
+    /**
+     * Test Case ID: 59
+     * Given 1 Recipe's instance and CoffeeMaker's instance
+     * When we state that 2 object are equal
+     * Then the method should return false
+     *
+     */
+    @Test
+    public void testCompareDifferentObject() {
+        assertFalse(recipeDuplicate1.equals(coffeemaker));
+    }
+
+    /**
+     * Test Case ID: 60
+     * Given 3 recipes
+     * When we compare same recipe they should have same hasCode
+     * Then if we compare 2 different recipe we should have different hasCode
+     *
+     */
+    @Test
+    public void testHasCode() {
+        assertEquals(recipeDuplicate1.hashCode(),recipeDuplicate1.hashCode());
+        assertNotEquals(recipeNotDuplicate1.hashCode(),recipeDuplicate2.hashCode());
     }
 }
