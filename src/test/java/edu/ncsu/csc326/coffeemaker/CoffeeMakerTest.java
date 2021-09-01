@@ -40,6 +40,7 @@ public class CoffeeMakerTest {
 	 * The object under test.
 	 */
 	private CoffeeMaker coffeeMaker;
+	private Inventory inventory;
 	
 	// Sample recipes to use in testing.
 	private Recipe recipe1;
@@ -59,6 +60,7 @@ public class CoffeeMakerTest {
 	@Before
 	public void setUp() throws RecipeException{
 		coffeeMaker = new CoffeeMaker();
+		inventory = new Inventory();
 		
 		//Set up for r1
 		recipe1 = new Recipe();
@@ -755,6 +757,22 @@ public class CoffeeMakerTest {
 	@Test
 	public void testPurchaseEmptyRecipe() {
 		assertEquals(300, coffeeMaker.makeCoffee(0,300));
+	}
+
+	/**
+	 * Test Case ID: 57
+	 * Given a coffee maker with default inventory
+	 * When reset machine try set all inventory to 0
+	 * Then all inventories turn to 0 and no error raise
+	 */
+	@Test
+	public void testSetInventoryToZero() throws InventoryException {
+		inventory.setCoffee(-1);
+		inventory.setSugar(-1);
+		inventory.setChocolate(-1);
+		inventory.setMilk(-1);
+		assertEquals("Coffee: " + "15" + "\n" + "Milk: " + "15" + "\n" + "Sugar: " + "15" + "\n"
+				+ "Chocolate: " + "15" + "\n", coffeeMaker.checkInventory());
 	}
 
 }
