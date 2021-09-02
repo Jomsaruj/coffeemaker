@@ -752,7 +752,7 @@ public class CoffeeMakerTest {
 	 * Then all inventories turn to 0 and no error raise
 	 */
 	@Test
-	public void testSetInventoryToZero() throws InventoryException {
+	public void testSetInventoryToNegative() throws InventoryException {
 		inventory.setCoffee(-1);
 		inventory.setSugar(-1);
 		inventory.setChocolate(-1);
