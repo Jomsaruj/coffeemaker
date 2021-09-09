@@ -30,8 +30,8 @@ public class CoffeeMaker {
      */
     public CoffeeMaker() {
     	this.recipeBook = new RecipeBook();
-	    this.inventory = new Inventory();
-	}
+    	this.inventory = new Inventory();
+    }
 
     /**
      * Initialize a new CoffeeMaker using provided recipeBook and inventory
