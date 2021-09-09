@@ -33,47 +33,47 @@ public class CoffeeMaker {
 		this.inventory = new Inventory();
 	}
 
-	/**
-	 * Initialize a new CoffeeMaker using provided recipeBook and inventory
-	 */
+    /**
+     * Initialize a new CoffeeMaker using provided recipeBook and inventory
+     */
 
-	public CoffeeMaker(RecipeBook recipeBook, Inventory inventory) {
-		this.recipeBook = recipeBook;
-		this.inventory = inventory;
-	}
-	
-	/**
-	 * Returns true if the recipe is added to the
-	 * list of recipes in the CoffeeMaker and false
-	 * otherwise.
-	 * @param r
-	 * @return boolean
-	 */
-	public boolean addRecipe(Recipe r) {
-		return recipeBook.addRecipe(r);
-	}
-	
-	/**
-	 * Returns the name of the successfully deleted recipe
-	 * or null if the recipe cannot be deleted.
-	 * 
-	 * @param recipeToDelete
-	 * @return String
-	 */
-	public String deleteRecipe(int recipeToDelete) {
-		return recipeBook.deleteRecipe(recipeToDelete);
-	}
-	
-	/**
-	 * Returns the name of the successfully edited recipe
-	 * or null if the recipe cannot be edited.
-	 * @param recipeToEdit
-	 * @param r
-	 * @return String
-	 */
-	public String editRecipe(int recipeToEdit, Recipe r) {
-		return recipeBook.editRecipe(recipeToEdit, r);
-	}
+    public CoffeeMaker(RecipeBook recipeBook, Inventory inventory) {
+	    this.recipeBook = recipeBook;
+	    this.inventory = inventory;
+    }
+
+    /**
+     * Returns true if the recipe is added to the
+     * list of recipes in the CoffeeMaker and false
+     * otherwise.
+     * @param r
+     * @return boolean
+     */
+    public boolean addRecipe(Recipe r) {
+	return recipeBook.addRecipe(r);
+}
+
+    /**
+     * Returns the name of the successfully deleted recipe
+     * or null if the recipe cannot be deleted.
+     *
+     * @param recipeToDelete
+     * @return String
+     */
+    public String deleteRecipe(int recipeToDelete) {
+	return recipeBook.deleteRecipe(recipeToDelete);
+}
+
+    /**
+     * Returns the name of the successfully edited recipe
+     * or null if the recipe cannot be edited.
+     * @param recipeToEdit
+     * @param r
+     * @return String
+     */
+    public String editRecipe(int recipeToEdit, Recipe r) {
+	return recipeBook.editRecipe(recipeToEdit, r);
+}
     
     /**
      * Returns true if inventory was successfully added
