@@ -22,13 +22,13 @@ public class CoffeeMaker {
 	/** Array of recipes in coffee maker */
 	private RecipeBook recipeBook;
 	/** Inventory of the coffee maker */
-    private Inventory inventory;
+	private Inventory inventory;
 	
     /**
      * Constructor for the coffee maker
      *
      */
-	public CoffeeMaker() {
+    public CoffeeMaker() {
 	    this.recipeBook = new RecipeBook();
 		this.inventory = new Inventory();
 	}
