@@ -123,11 +123,11 @@ public class CoffeeMaker {
         return change;
     }
 
-	/**
-	 * Returns the list of Recipes in the RecipeBook.
-	 * @return Recipe []
-	 */
-	public synchronized Recipe[] getRecipes() {
-		return recipeBook.getRecipes();
-	}
+    /**
+     * Returns the list of Recipes in the RecipeBook.
+     * @return Recipe []
+     */
+    public synchronized Recipe[] getRecipes() {
+	return recipeBook.getRecipes();
+}
 }
