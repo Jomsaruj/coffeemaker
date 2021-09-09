@@ -39,7 +39,7 @@ public class CoffeeMaker {
 
     public CoffeeMaker(RecipeBook recipeBook, Inventory inventory) {
     	this.recipeBook = recipeBook;
-	    this.inventory = inventory;
+    	this.inventory = inventory;
     }
 
     /**
