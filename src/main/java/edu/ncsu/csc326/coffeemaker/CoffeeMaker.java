@@ -78,10 +78,10 @@ public class CoffeeMaker {
      * @return boolean
      */
     public synchronized void addInventory(String amtCoffee, String amtMilk, String amtSugar, String amtChocolate) throws InventoryException {
-	    inventory.addCoffee(amtCoffee);
-	    inventory.addMilk(amtMilk);
-	    inventory.addSugar(amtSugar);
-	    inventory.addChocolate(amtChocolate);
+    	inventory.addCoffee(amtCoffee);
+    	inventory.addMilk(amtMilk);
+    	inventory.addSugar(amtSugar);
+    	inventory.addChocolate(amtChocolate);
     }
     
     /**
