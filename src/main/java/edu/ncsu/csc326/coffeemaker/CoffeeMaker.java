@@ -29,8 +29,8 @@ public class CoffeeMaker {
      *
      */
     public CoffeeMaker() {
-	    this.recipeBook = new RecipeBook();
-		this.inventory = new Inventory();
+    	this.recipeBook = new RecipeBook();
+	    this.inventory = new Inventory();
 	}
 
     /**
@@ -38,7 +38,7 @@ public class CoffeeMaker {
      */
 
     public CoffeeMaker(RecipeBook recipeBook, Inventory inventory) {
-	    this.recipeBook = recipeBook;
+    	this.recipeBook = recipeBook;
 	    this.inventory = inventory;
     }
 
@@ -49,9 +49,7 @@ public class CoffeeMaker {
      * @param r
      * @return boolean
      */
-    public boolean addRecipe(Recipe r) {
-	return recipeBook.addRecipe(r);
-}
+    public boolean addRecipe(Recipe r) {return recipeBook.addRecipe(r);}
 
     /**
      * Returns the name of the successfully deleted recipe
@@ -60,9 +58,7 @@ public class CoffeeMaker {
      * @param recipeToDelete
      * @return String
      */
-    public String deleteRecipe(int recipeToDelete) {
-	return recipeBook.deleteRecipe(recipeToDelete);
-}
+    public String deleteRecipe(int recipeToDelete) {return recipeBook.deleteRecipe(recipeToDelete);}
 
     /**
      * Returns the name of the successfully edited recipe
@@ -71,9 +67,7 @@ public class CoffeeMaker {
      * @param r
      * @return String
      */
-    public String editRecipe(int recipeToEdit, Recipe r) {
-	return recipeBook.editRecipe(recipeToEdit, r);
-}
+    public String editRecipe(int recipeToEdit, Recipe r) {return recipeBook.editRecipe(recipeToEdit, r);}
     
     /**
      * Returns true if inventory was successfully added
