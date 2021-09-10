@@ -9,6 +9,7 @@ In this instance, I will not modify AddRecipe, DeleteRecipe, and EditRecipe. A g
 
 ## Assignment Report
 * [List of modified test cases]()
+* [List of added test cases]()
 
 CoffeeMaker Assignment 2 - code coverage with JaCoCo
 =================================
