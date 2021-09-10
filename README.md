@@ -7,7 +7,7 @@ Due date: 13 September 2021
 
 My task is to modify coffeeMakerTest.java to use Mockito and create a mocked/stubbed version of RecipeBook then re-run the unit tests that are not focused on RecipeBook, such as PurchaseBeverage.  I want to find the bugs in the CoffeeMaker and Inventory classes using the stubbed RecipeBook, and to check that RecipeBook is being used appropriately using the mocking support of Mockito.
 
-In this instance, I will not modify AddRecipe, DeleteRecipe, and EditRecipe. A good place to focus is on [UC7](../../wiki/UC7:%20PurchaseBeverage)
+In this instance, I will not modify tests relating to AddRecipe, DeleteRecipe, and EditRecipe. A good place to focus is on [UC7](../../wiki/UC7:%20PurchaseBeverage)
 
 ## All test cases that contained mocked/stubbed version of RecipeBook
 
