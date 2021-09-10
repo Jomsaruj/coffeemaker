@@ -26,7 +26,7 @@ repositories {
     mavenCentral()
 }
 
- test {
+test {
      testLogging.showStandardStreams = true
  }
 
@@ -34,8 +34,5 @@ dependencies {
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
     testImplementation 'org.mockito:mockito-core:3.+'
-
-	// Deprecated.  Use testImplementation.
-//    testCompile 'junit:junit:4.12'
 }
 
