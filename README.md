@@ -1,3 +1,15 @@
+CoffeeMaker Assignment 3 - Add Mocks and Stubs 
+=================================
+
+Due date: 13 September 2021
+
+My task is to modify ```coffeeMakerTest.java``` to use Mockito and create a mocked/stubbed version of RecipeBook then re-run the unit tests that are not focused on RecipeBook, such as PurchaseBeverage.  I want to find the bugs in the CoffeeMaker and Inventory classes using the stubbed RecipeBook, and to check that RecipeBook is being used appropriately using the mocking support of Mockito.
+
+In this instance, I will not modify AddRecipe, DeleteRecipe, and EditRecipe. A good place to focus is on [UC7: PurchaseBeverage](../../wiki/UC7:%20PurchaseBeverage)
+
+## Assignment Report
+* [List of modified test cases]()
+
 CoffeeMaker Assignment 2 - code coverage with JaCoCo
 =================================
 
@@ -5,7 +17,7 @@ Due date: 7 September 2021
 
 My task is to add code coverage using JaCoCo to my coffeemaker project by add it as a Gradle plugin (which automatically creates a task to generate a report).
 
-This exercise focuses entirely on testing.  You are NOT to fix the coffee maker.  You are only to develop tests to exercise the functionality as described in the requirements.
+This exercise focuses entirely on testing.  I'm NOT to fix the coffee maker.  I'm only to develop tests to exercise the functionality as described in the requirements.
 
 ## Assignment Report
 
@@ -20,7 +32,7 @@ Due date: 31 August 2021
 
 My task is to create a file, `CoffeeMakerTest.java`, which properly tests the `CoffeeMaker` class to ensure it is working properly. 
 
-This exercise focuses entirely on testing.  You are NOT to fix the coffee maker.  You are only to develop tests to exercise the functionality as described in the requirements.
+This exercise focuses entirely on testing.  I'm NOT to fix the coffee maker.  I'm only to develop tests to exercise the functionality as described in the requirements.
 
 ## Assignment Report
 * [Test Cases Listing](../../wiki/Test%20Case)
