@@ -2,6 +2,7 @@ CoffeeMaker Assignment 3 - Add Mocks and Stubs
 =================================
 
 Due date: 13 September 2021
+Status: not finished
 
 ```
 only modified and added some test cases to CoffeeMakerTest.java
