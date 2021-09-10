@@ -9,9 +9,19 @@ My task is to modify coffeeMakerTest.java to use Mockito and create a mocked/stu
 
 In this instance, I will not modify AddRecipe, DeleteRecipe, and EditRecipe. A good place to focus is on [UC7](../../wiki/UC7:%20PurchaseBeverage)
 
+## All test cases that contained mocked/stubbed version of RecipeBook
+
+* Test Case ID 31
+* Test Case ID 32
+* Test Case ID 33
+* Test Case ID 34
+* Test Case ID 35
+* Test Case ID 36
+* Test Case ID 37
+
 ## Assignment Report
-* [List of modified test cases]()
-* [List of added test cases]()
+* [List of all modified test cases]()
+* [List of all added test cases]()
 
 CoffeeMaker Assignment 2 - code coverage with JaCoCo
 =================================
