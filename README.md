@@ -7,7 +7,7 @@ Due date: 13 September 2021
 all test cases for this assignment are added to CoffeeMakerMockTest.java
 ```
 
-My task is to create coffeeMakerMockTest.java to use Mockito and create a mocked/stubbed version of RecipeBook then re-run the unit tests that are not focused on RecipeBook, such as PurchaseBeverage.  I want to find the bugs in the CoffeeMaker and Inventory classes using the stubbed RecipeBook, and to check that RecipeBook is being used appropriately using the mocking support of Mockito.
+My task is to create CoffeeMakerMockTest.java to use Mockito and create a mocked/stubbed version of RecipeBook then re-run the unit tests that are not focused on RecipeBook, such as PurchaseBeverage.  I want to find the bugs in the CoffeeMaker and Inventory classes using the stubbed RecipeBook, and to check that RecipeBook is being used appropriately using the mocking support of Mockito.
 
 In this instance, I will not modify tests relating to AddRecipe, DeleteRecipe, and EditRecipe. A good place to focus is on [UC7](../../wiki/UC7:%20PurchaseBeverage)
 
