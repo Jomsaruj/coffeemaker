@@ -43,12 +43,7 @@ public class CoffeeMakerTest {
 	private Inventory inventory;
 	
 	// Sample recipes to use in testing.
-	private Recipe recipe1;
-	private Recipe recipe1Copy;
-	private Recipe recipe2;
-	private Recipe recipe3;
-	private Recipe recipe4;
-	private Recipe recipe5;
+	private Recipe recipe1, recipe1Copy, recipe2, recipe3, recipe4, recipe5;
 
 	/**
 	 * Method to create Recipe instance
@@ -81,15 +76,14 @@ public class CoffeeMakerTest {
 	 */
 	@Before
 	public void setUp() throws RecipeException{
+
 		coffeeMaker = new CoffeeMaker();
 		inventory = new Inventory();
 		
 		//Set up for recipe1
 		recipe1 = createRecipe("Coffee", "0","3","1","1","50");
 
-		//Set up for recipe1Copy
-		//recipe1Copy is a recipe that have same recipe's name as r1
-		//but other properties are different
+		//Set up for recipe1Copy which is a recipe that have same recipe's name as recipe1
 		recipe1Copy = createRecipe("Coffee", "1","1","2","2","10");
 		
 		//Set up for recipe2
@@ -737,7 +731,7 @@ public class CoffeeMakerTest {
 	/**
 	 * Test Case ID: 56
 	 * Given a coffee maker without any recipe in the system
-	 * When purchase unexist recipe
+	 * When purchase un-exist recipe
 	 * Then purchase must fail and return full amount of money
 	 */
 	@Test
@@ -752,7 +746,7 @@ public class CoffeeMakerTest {
 	 * Then all inventories turn to 0 and no error raise
 	 */
 	@Test
-	public void testSetInventoryToNegative() throws InventoryException {
+	public void testSetInventoryToNegative(){
 		inventory.setCoffee(-1);
 		inventory.setSugar(-1);
 		inventory.setChocolate(-1);
