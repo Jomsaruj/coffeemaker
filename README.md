@@ -12,7 +12,7 @@ My task is to create CoffeeMakerMockTest.java to use Mockito and create a mocked
 In this instance, I will not modify tests relating to AddRecipe, DeleteRecipe, and EditRecipe. A good place to focus is on [UC7](../../wiki/UC7:%20PurchaseBeverage)
 
 ## Assignment Report
-* [List of all added test cases]()
+* [List of all added test cases](../wiki/Test%20cases%20with%20mock%20recipeBook)
 
 CoffeeMaker Assignment 2 - code coverage with JaCoCo
 =================================
