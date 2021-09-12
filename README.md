@@ -1,4 +1,4 @@
-CoffeeMaker Assignment 3 - Add Mocks and Stubs 
+CoffeeMaker Assignment 3 - add Mocks and Stubs 
 =================================
 
 Due date: 13 September 2021
