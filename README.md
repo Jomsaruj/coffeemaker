@@ -2,27 +2,16 @@ CoffeeMaker Assignment 3 - Add Mocks and Stubs
 =================================
 
 Due date: 13 September 2021
-Status: not finished
 
 ```
-only modified and added some test cases to CoffeeMakerTest.java
+all test cases for this assignment are added to CoffeeMakerMockTest.java
 ```
 
-My task is to modify coffeeMakerTest.java to use Mockito and create a mocked/stubbed version of RecipeBook then re-run the unit tests that are not focused on RecipeBook, such as PurchaseBeverage.  I want to find the bugs in the CoffeeMaker and Inventory classes using the stubbed RecipeBook, and to check that RecipeBook is being used appropriately using the mocking support of Mockito.
+My task is to create coffeeMakerMockTest.java to use Mockito and create a mocked/stubbed version of RecipeBook then re-run the unit tests that are not focused on RecipeBook, such as PurchaseBeverage.  I want to find the bugs in the CoffeeMaker and Inventory classes using the stubbed RecipeBook, and to check that RecipeBook is being used appropriately using the mocking support of Mockito.
 
 In this instance, I will not modify tests relating to AddRecipe, DeleteRecipe, and EditRecipe. A good place to focus is on [UC7](../../wiki/UC7:%20PurchaseBeverage)
 
-## All test cases that contained mocked/stubbed version of RecipeBook
-
-* Test Case ID 31
-* Test Case ID 32
-* Test Case ID 33
-* Test Case ID 34
-* Test Case ID 35
-* Test Case ID 36
-
 ## Assignment Report
-* [List of all modified test cases]()
 * [List of all added test cases]()
 
 CoffeeMaker Assignment 2 - code coverage with JaCoCo
