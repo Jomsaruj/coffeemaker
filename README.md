@@ -1,3 +1,13 @@
+CoffeeMaker Assignment 4 - Behavioral Tests with Cucumber 
+=================================
+
+Due date: TBA
+
+My task is to implement a tool called Cucumber on Behavioral testing
+
+## Assignment Report
+* [List of all added test cases]()
+
 CoffeeMaker Assignment 3 - add Mocks and Stubs 
 =================================
 
