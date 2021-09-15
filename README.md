@@ -1,4 +1,4 @@
-CoffeeMaker Assignment 4 - Behavioral Tests with Cucumber 
+CoffeeMaker Assignment 4 - Behavioral Testing
 =================================
 
 Due date: TBA
