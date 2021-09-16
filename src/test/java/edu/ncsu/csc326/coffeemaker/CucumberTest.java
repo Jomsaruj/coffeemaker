@@ -65,19 +65,19 @@ public class CucumberTest{
         coffeeMaker.addInventory(Integer.toString(coffee),Integer.toString(milk),Integer.toString(sugar),Integer.toString(chocolate));
     }
 
-    @When("Barista add recipe called secret to coffeemaker")
-    public void baristaAddRecipeCalledSecretToCoffeemaker() throws RecipeException {
-        secret = createRecipe("Secret", "2","2","1","5", "100");
+    @When("Create secret recipe named {word}")
+    public void baristaAddRecipeCalledSecretToCoffeemaker(String recipeName) throws RecipeException {
+        secret = createRecipe(recipeName, "2","2","1","5", "100");
     }
 
-    @Then("coffeemaker return true")
+    @Then("Barista add secret recipe and coffeemaker return true")
     public void coffeemakerReturnTrue() {
         assertTrue(coffeeMaker.addRecipe(secret));
     }
 
-    @When("Barista set all inventories and price for recipe {int} to 1")
-    public void baristaSetUnitForCoffeeMilkChocolateSugarRespectivelyAndForPrice(int recipeToEdit) throws RecipeException {
-        Recipe temp = createRecipe("temp","1","1","1","1","1");
+    @When("Barista set all inventories and price for recipe {int} to {int}")
+    public void baristaSetUnitForCoffeeMilkChocolateSugarRespectivelyAndForPrice(int recipeToEdit, int numberToSet) throws RecipeException {
+        Recipe temp = createRecipe("temp",Integer.toString(numberToSet),Integer.toString(numberToSet),Integer.toString(numberToSet),Integer.toString(numberToSet),Integer.toString(numberToSet));
         coffeeMaker.editRecipe(recipeToEdit - 1,temp);
     }
 
