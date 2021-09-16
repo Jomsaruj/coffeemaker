@@ -45,7 +45,8 @@ public class CucumberTest{
 
     @Then("After purchased coffeemaker return to customer {int} Bath")
     public void afterPurchasedCoffeemakerReturnToCustomerBath(int amtReturn) {
-        assertEquals(amtReturn, coffeeMaker.makeCoffee(selectedRecipe,amtPaid));
+        int returnChange = coffeeMaker.makeCoffee(selectedRecipe,amtPaid);
+        assertEquals(amtReturn, returnChange);
     }
 
     @When("Maintenance team select check inventory option")
