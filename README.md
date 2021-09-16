@@ -13,7 +13,7 @@ have JUnit tests for detailed unit testing. We're going to use Cucumber to test 
 All of these users are people who will use our machine.
 
 ## Assignment Report
-* [List of all tested user stories]()
+* [List of all tested user stories](../../wiki/Tested%20user%20stories)
 
 CoffeeMaker Assignment 3 - Mocks and Stubs 
 =================================
