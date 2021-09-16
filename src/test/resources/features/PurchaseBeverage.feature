@@ -27,3 +27,10 @@ Feature: Purchase a beverage (user level = customer)
             And Customer deposit 20 Bath
             Then After purchased coffeemaker return to customer 20 Bath
 
+        Scenario: Buy some beverages until coffeemaker not have enough inventory
+            When Customer select recipe number 2
+            And Customer deposit 35 Bath
+            Then After purchased coffeemaker return to customer 0 Bath
+            When Customer select recipe number 2
+            And Customer deposit 35 Bath
+            Then After purchased coffeemaker return to customer 35 Bath

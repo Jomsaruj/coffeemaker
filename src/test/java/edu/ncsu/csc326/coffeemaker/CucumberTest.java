@@ -28,7 +28,7 @@ public class CucumberTest{
     public void coffeemakerIsReady() throws RecipeException {
         coffeeMaker = new CoffeeMaker();
         Recipe recipe1 = createRecipe("Black coffee", "0","3","1","1","50");
-        Recipe recipe2 = createRecipe("Ice chocolate", "3","0","2","3","35");
+        Recipe recipe2 = createRecipe("Ice chocolate", "8","0","2","3","35");
         coffeeMaker.addRecipe(recipe1);
         coffeeMaker.addRecipe(recipe2);
     }
@@ -74,6 +74,11 @@ public class CucumberTest{
     @Then("Barista add secret recipe and coffeemaker return true")
     public void coffeemakerReturnTrue() {
         assertTrue(coffeeMaker.addRecipe(secret));
+    }
+
+    @Then("Barista add secret recipe and coffeemaker return false")
+    public void coffeemakerReturnFalse() {
+        assertFalse(coffeeMaker.addRecipe(secret));
     }
 
     @When("Barista set all inventories and price for recipe {int} to {int}")

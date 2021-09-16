@@ -10,7 +10,15 @@ Feature: Add and check inventory (user level = maintenance team)
           When Maintenance team select check inventory option
           Then coffeemaker return 15, 15, 15, 15 units for coffee, milk, sugar, chocolate respectively
 
-#      This test will fail due to a bug in a coffeemaker code, so I comment it
+#      These test cases will fail due to some bugs in coffeemaker code, so I comment it
+
+#      Scenario: Maintenance team check inventory after customer purchased a beverage
+#          When Customer select recipe number 1
+#          And Customer deposit 50 Bath
+#          Then After purchased coffeemaker return to customer 0 Bath
+#          When Maintenance team select check inventory option
+#          Then coffeemaker return 12, 14, 14, 15 units for coffee, milk, sugar, chocolate respectively
+
 #
 #      Scenario: Maintenance team add inventory (default inventory)
 #        Given coffeemaker is ready
