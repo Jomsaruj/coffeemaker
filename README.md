@@ -1,4 +1,4 @@
-CoffeeMaker Assignment 4 - Behavioral Testing with Cucumber
+CoffeeMaker Assignment 4 - Behavioral testing with cucumber
 =================================
 
 Due date: no due date
@@ -15,7 +15,7 @@ All of these users are people who will use our machine.
 ## Assignment Report
 * [List of all tested user stories](../../wiki/Tested%20user%20stories)
 
-CoffeeMaker Assignment 3 - Mocks and Stubs 
+CoffeeMaker Assignment 3 - Test double 
 =================================
 
 Due date: 13 September 2021
