@@ -12,6 +12,12 @@ have JUnit tests for detailed unit testing. We're going to use Cucumber to test 
 
 All of these users are people who will use our machine.
 
+## How to run
+```
+gradle cucumber
+```
+gradle build if needed
+
 ## Assignment Report
 * [List of all tested user stories](../../wiki/Tested%20user%20stories)
 
