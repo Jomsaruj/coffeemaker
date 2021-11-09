@@ -1,7 +1,6 @@
 CoffeeMaker Assignment 4 - Behavioral test with Cucumber
 =================================
 
-Due date: no due date
 
 My task is to implement a tool called Cucumber on Behavioral testing to test some user stories from Coffeemaker project. Since we already
 have JUnit tests for detailed unit testing. We're going to use Cucumber to test only some features that the customer would be interested in. In this assignment, I have classified **user** into 3 groups.
