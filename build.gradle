@@ -32,12 +32,20 @@ test {
 
 dependencies {
     // Use JUnit test framework
-    testImplementation 'junit:junit:4.12'
-    testImplementation 'org.mockito:mockito-core:3.+'
+    // testImplementation 'org.mockito:mockito-core:3.+'
 
-    // Cucumber
+    // JSON
+    implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1'
+    implementation group: 'javax.json', name: 'javax.json-api', version: '1.1.4'
+    // java test
+    // testImplementation 'junit:junit:4.12'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    // cucumber
     testImplementation 'io.cucumber:cucumber-java:6.10.4'
     testImplementation 'io.cucumber:cucumber-junit:6.10.4'
+    //dotenv
+    implementation 'io.github.cdimascio:java-dotenv:5.2.2'
 }
 
 configurations {

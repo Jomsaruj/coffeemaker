@@ -5,6 +5,24 @@ import edu.ncsu.csc326.coffeemaker.exceptions.RecipeException;
 import io.cucumber.java.en.*;
 import static org.junit.Assert.*;
 
+// test
+import java.io.*;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.nio.charset.StandardCharsets;
+import java.util.Base64;
+import java.util.List;
+import java.util.Map;
+
+import io.cucumber.datatable.DataTable;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+import io.cucumber.java.en.*;
+import io.github.cdimascio.dotenv.Dotenv;
+import static org.junit.Assert.*;
+
+
 public class CucumberTest{
 
     private CoffeeMaker coffeeMaker;
